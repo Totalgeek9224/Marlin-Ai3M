@@ -28,6 +28,45 @@
   #define BOARD_NAME "Anycubic RAMPS 1.4"
 #endif
 
+#define IS_RAMPS_EFB
+#define RAMPS_D9_PIN       44
+#define ORIG_E0_AUTO_FAN_PIN RAMPS_D9_PIN
+
+#include "pins_RAMPS_13.h"
+#if HAS_DRIVER(TMC2208_STANDALONE)
+/**
+ * TMC2208 stepper drivers
+ *
+ * Hardware serial communication ports.
+ * If undefined software serial is used according to the pins below
+ */
+#define X_SERIAL_TX_PIN    21
+#define X_SERIAL_RX_PIN    -1
+#define X2_SERIAL_TX_PIN   -1
+#define X2_SERIAL_RX_PIN   -1
+
+#define Y_SERIAL_TX_PIN    14
+#define Y_SERIAL_RX_PIN    -1
+#define Y2_SERIAL_TX_PIN   -1
+#define Y2_SERIAL_RX_PIN   -1
+
+#define Z_SERIAL_TX_PIN    4
+#define Z_SERIAL_RX_PIN    -1
+#define Z2_SERIAL_TX_PIN   -1
+#define Z2_SERIAL_RX_PIN   -1
+
+#define E0_SERIAL_TX_PIN   20
+#define E0_SERIAL_RX_PIN   -1
+#define E1_SERIAL_TX_PIN   -1
+#define E1_SERIAL_RX_PIN   -1
+#define E2_SERIAL_TX_PIN   -1
+#define E2_SERIAL_RX_PIN   -1
+#define E3_SERIAL_TX_PIN   -1
+#define E3_SERIAL_RX_PIN   -1
+#define E4_SERIAL_TX_PIN   -1
+#define E4_SERIAL_RX_PIN   -1
+#endif
+
 #define LARGE_FLASH        true
 
 // Misc PINs
@@ -35,7 +74,7 @@
 #define SDPOWER            -1
 #define SDSS               53
 #define LED_PIN            13
-#define Z_MIN_PROBE_PIN     2
+#define Z_MIN_PROBE_PIN    15
 #define FIL_RUNOUT_PIN	   19
 
 #ifdef OutageTest
@@ -97,7 +136,7 @@
 // Servos
 #if TRIGORILLA_VERSION == 0 // Default Trigorilla
   #ifdef NUM_SERVOS
-  	#define SERVO0_PIN      11
+  	#define SERVO0_PIN      14
 
   	#if NUM_SERVOS > 1
   		#define SERVO1_PIN    6
