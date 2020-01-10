@@ -40,22 +40,22 @@
  * Hardware serial communication ports.
  * If undefined software serial is used according to the pins below
  */
-#define X_SERIAL_TX_PIN    21
+//#define X_SERIAL_TX_PIN    21
 #define X_SERIAL_RX_PIN    -1
 #define X2_SERIAL_TX_PIN   -1
 #define X2_SERIAL_RX_PIN   -1
 
-#define Y_SERIAL_TX_PIN    14
+//#define Y_SERIAL_TX_PIN    14
 #define Y_SERIAL_RX_PIN    -1
 #define Y2_SERIAL_TX_PIN   -1
 #define Y2_SERIAL_RX_PIN   -1
 
-#define Z_SERIAL_TX_PIN    4
+//#define Z_SERIAL_TX_PIN    4
 #define Z_SERIAL_RX_PIN    -1
 #define Z2_SERIAL_TX_PIN   -1
 #define Z2_SERIAL_RX_PIN   -1
 
-#define E0_SERIAL_TX_PIN   20
+//#define E0_SERIAL_TX_PIN   20
 #define E0_SERIAL_RX_PIN   -1
 #define E1_SERIAL_TX_PIN   -1
 #define E1_SERIAL_RX_PIN   -1
