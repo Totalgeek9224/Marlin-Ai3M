@@ -1981,11 +1981,11 @@
  * The new version is to be identified by a "TRIGORILLA1.1" lettering
  * on the upper left of the PCB silkscreen.
  */
-#define TRIGORILLA_VERSION 0
+#define TRIGORILLA_VERSION 1
 
 // Enable Anycubic TFT
 #define ANYCUBIC_TFT_MODEL
 //#define ANYCUBIC_FILAMENT_RUNOUT_SENSOR
-//#define ANYCUBIC_TFT_DEBUG
+#define ANYCUBIC_TFT_DEBUG
 
 #endif // CONFIGURATION_H
