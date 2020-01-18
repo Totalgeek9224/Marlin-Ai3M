@@ -70,7 +70,7 @@
 #define LARGE_FLASH        true
 
 // Misc PINs
-#define BUZZER 			   31
+#define BUZZER 			       31
 #define SDPOWER            -1
 #define SDSS               53
 #define LED_PIN            13
@@ -117,10 +117,10 @@
 #define Z_MAX_PIN          -1
 
 // Fans
-#define FAN_PIN             9
+#define FAN_PIN             7
 #define FAN2_PIN           44
 #define ORIG_E0_AUTO_FAN_PIN 44
-#define CONTROLLER_FAN_PIN  7
+#define CONTROLLER_FAN_PIN  9
 
 // Heaters
 #define HEATER_0_PIN       10

@@ -385,9 +385,9 @@
   //#define  DEFAULT_Kd 54.19
 
   // i3 Mega - auto tuned
-#define DEFAULT_Kp 33.40
-#define DEFAULT_Ki 4.58
-#define DEFAULT_Kd 60.89
+#define DEFAULT_Kp 9.88
+#define DEFAULT_Ki 0.37
+#define DEFAULT_Kd 66.76
 
   // Ultimaker
   //#define  DEFAULT_Kp 22.2
@@ -442,9 +442,14 @@
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
   //Anycubic i3 Mega Ultrabase (0.9Ω @ 22°C)
-  #define DEFAULT_bedKp 251.78
-  #define DEFAULT_bedKi 49.57
-  #define DEFAULT_bedKd 319.73
+  //#define DEFAULT_bedKp 251.78
+  //#define DEFAULT_bedKi 49.57
+  //#define DEFAULT_bedKd 319.73
+
+//Anycubic i3 Mega Ultrabase PIDtest
+#define DEFAULT_bedKp 173.32
+#define DEFAULT_bedKi 32.55
+#define DEFAULT_bedKd 230.71
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
@@ -802,9 +807,9 @@
  *      O-- FRONT --+
  *    (0,0)
  */
-#define X_PROBE_OFFSET_FROM_EXTRUDER -24  // X offset: -left  +right  [of the nozzle]
-#define Y_PROBE_OFFSET_FROM_EXTRUDER -1 // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -1  // Z offset: -below +above  [the nozzle]
+#define X_PROBE_OFFSET_FROM_EXTRUDER -31  // X offset: -left  +right  [of the nozzle]
+#define Y_PROBE_OFFSET_FROM_EXTRUDER -5 // Y offset: -front +behind [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER 0  // Z offset: -below +above  [the nozzle]
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10
@@ -1002,8 +1007,8 @@
 //#define AUTO_BED_LEVELING_3POINT
 //#define AUTO_BED_LEVELING_LINEAR
 //#define AUTO_BED_LEVELING_BILINEAR
-#define AUTO_BED_LEVELING_UBL
-//#define MESH_BED_LEVELING
+//#define AUTO_BED_LEVELING_UBL
+#define MESH_BED_LEVELING
 
 /**
  * Normally G28 leaves leveling disabled on completion. Enable
@@ -1981,11 +1986,11 @@
  * The new version is to be identified by a "TRIGORILLA1.1" lettering
  * on the upper left of the PCB silkscreen.
  */
-#define TRIGORILLA_VERSION 0
+#define TRIGORILLA_VERSION 1
 
 // Enable Anycubic TFT
 #define ANYCUBIC_TFT_MODEL
 //#define ANYCUBIC_FILAMENT_RUNOUT_SENSOR
-//#define ANYCUBIC_TFT_DEBUG
+#define ANYCUBIC_TFT_DEBUG
 
 #endif // CONFIGURATION_H
