@@ -385,9 +385,9 @@
   //#define  DEFAULT_Kd 54.19
 
   // i3 Mega - auto tuned
-#define DEFAULT_Kp 28.44
-#define DEFAULT_Ki 3.44
-#define DEFAULT_Kd 58.82
+#define DEFAULT_Kp 28.76
+#define DEFAULT_Ki 3.51
+#define DEFAULT_Kd 58.90
 
   // Ultimaker
   //#define  DEFAULT_Kp 22.2
