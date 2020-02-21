@@ -385,9 +385,9 @@
   //#define  DEFAULT_Kd 54.19
 
   // i3 Mega - auto tuned
-#define DEFAULT_Kp 28.76
-#define DEFAULT_Ki 3.51
-#define DEFAULT_Kd 58.90
+#define DEFAULT_Kp 21.56
+#define DEFAULT_Ki 2.09
+#define DEFAULT_Kd 55.63
 
   // Ultimaker
   //#define  DEFAULT_Kp 22.2
@@ -572,7 +572,7 @@
 #define X2_DRIVER_TYPE TMC2208_STANDALONE //not used
 #define Y2_DRIVER_TYPE TMC2208_STANDALONE // not used
 #define Z2_DRIVER_TYPE TMC2208_STANDALONE // comment out for stock drivers
-#define E0_DRIVER_TYPE TMC2208_STANDALONE // comment out for stock drivers
+#define E0_DRIVER_TYPE TMC2208            // comment out for stock drivers
 #define E1_DRIVER_TYPE TMC2208_STANDALONE // comment out for stock drivers not used
 #define E2_DRIVER_TYPE TMC2208_STANDALONE //not used
 #define E3_DRIVER_TYPE TMC2208_STANDALONE //not used
@@ -809,7 +809,7 @@
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER -31  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER -5 // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -0 // Z offset: -below +above  [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -2.1 // Z offset: -below +above  [the nozzle]
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10
@@ -850,8 +850,8 @@
 #define Z_PROBE_LOW_POINT          -2 // Farthest distance below the trigger-point to go before stopping
 
 // For M851 give a range for adjusting the Z probe offset
-#define Z_PROBE_OFFSET_RANGE_MIN -3
-#define Z_PROBE_OFFSET_RANGE_MAX 3
+#define Z_PROBE_OFFSET_RANGE_MIN -20
+#define Z_PROBE_OFFSET_RANGE_MAX 20
 
 // Enable the M48 repeatability test to test probe accuracy
 //#define Z_MIN_PROBE_REPEATABILITY_TEST
@@ -916,7 +916,7 @@
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS -5
 #define Y_MIN_POS 0
-#define Z_MIN_POS 0
+#define Z_MIN_POS -0.10
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
 #define Z_MAX_POS 199
